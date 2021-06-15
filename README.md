@@ -16,7 +16,7 @@ When this option is enabled you will find a new button on the context menu:
 ![image](https://user-images.githubusercontent.com/36928284/122121285-ba554c80-ce2b-11eb-90e9-be5fe669897b.png)
 
 ## Can I use this with a different bot?
-I do not know every discord bot or other but but this simply constructs a string with the given URL in it. So if you tweak the code a bit I am sure you can make it work too!
+I do not know every discord bot or other bot but this simply constructs a string with the given URL in it. So if you tweak the code a bit I am sure you can make it work too!
 
 ## Installation:
 This is an extension to use with [Spicetify](https://github.com/khanhas/spicetify-cli). The given `.js` file is the only file needed.
