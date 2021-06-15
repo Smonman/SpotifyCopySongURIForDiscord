@@ -49,5 +49,6 @@ inject_css              = 0
 ```
 
 Then open the terminal and enter `spicetify backup apply`.
+After every Spotify update you need to enter the above command again!
 
-After every Spotify update you need to enter the above command again! For further infos on how to use Spicetify, please visit their repo. 
+__For further infos on how to use Spicetify, please visit their repo!__
