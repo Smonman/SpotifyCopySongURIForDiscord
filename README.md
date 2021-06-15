@@ -22,10 +22,9 @@ I do not know every discord bot or other but but this simply constructs a string
 This is an extension to use with [Spicetify](https://github.com/khanhas/spicetify-cli). The given `.js` file is the only file needed.
 
 So first of all you need to download and install Spicetify. On the github page are all the neccessary details for that.
-
 Navigate to the Spicetify directory and paste the downloaded `discordPlayClipboardShare.js` file inside of the `Extensions` folder.
 
-_You can download this file here:_ <a href="https://github.com/Smonman/SpotifyCopySongURLForDiscord/releases"></a>
+_(You can download this file here: <a href="https://github.com/Smonman/SpotifyCopySongURLForDiscord/releases">Download</a>)_
 
 Next, you need to change the `config-xpui.ini` in the Spicetify directory as follows:
 Change the line where the extensions are specified from
