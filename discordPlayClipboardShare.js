@@ -17,19 +17,24 @@
 
 
     function copyForDiscordPlay(uris) {
+
+        console.log(uris);
+
         const uriObj = Spicetify.URI.fromString(uris[0]);
         const openURL = uriObj.toOpenURL();
 
         let copyString = "";
         let shuffleEnabled = Spicetify.Player.getShuffle();
 
-        console.log(shuffleEnabled);
-
         switch (uriObj.type) {
             case Spicetify.URI.Type.TRACK:
+            case Spicetify.URI.Type.SHOW:
+            case Spicetify.URI.Type.EPISODE:
                 copyString = discordBotStringBuilder(openURL, false);
                 break;
             case Spicetify.URI.Type.PLAYLIST:
+            case Spicetify.URI.Type.PLAYLIST_V2:
+            case Spicetify.URI.Type.ALBUM:
                 copyString = discordBotStringBuilder(openURL, shuffleEnabled);
                 break;
         }
@@ -60,15 +65,20 @@
         }
 
         // if more the one song is selected, hide the context item
-        if (uris.length > 1) {
+        if (uris.length != 1) {
             return false;
         }
 
         // get the first URI
         const uriObj = Spicetify.URI.fromString(uris[0]);
 
-        // check if the type is a track or a playlist
-        if (uriObj.type === Spicetify.URI.Type.TRACK || uriObj.type === Spicetify.URI.Type.PLAYLIST) {
+        // display the context menue for these types
+        if (uriObj.type === Spicetify.URI.Type.TRACK ||
+            uriObj.type === Spicetify.URI.Type.ALBUM ||
+            uriObj.type === Spicetify.URI.Type.PLAYLIST ||
+            uriObj.type === Spicetify.URI.Type.PLAYLIST_V2 ||
+            uriObj.type === Spicetify.URI.Type.SHOW ||
+            uriObj.type === Spicetify.URI.Type.EPISODE) {
             return true;
         } else {
             return false;
