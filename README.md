@@ -25,6 +25,8 @@ So first of all you need to download and install Spicetify. On the github page a
 
 Navigate to the Spicetify directory and paste the downloaded `discordPlayClipboardShare.js` file inside of the `Extensions` folder.
 
+_You can download this file here:_ <a href="https://github.com/Smonman/SpotifyCopySongURLForDiscord/releases"></a>
+
 Next, you need to change the `config-xpui.ini` in the Spicetify directory as follows:
 Change the line where the extensions are specified from
 ```
