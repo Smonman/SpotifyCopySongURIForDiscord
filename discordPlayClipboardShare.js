@@ -17,9 +17,6 @@
 
 
     function copyForDiscordPlay(uris) {
-
-        console.log(uris);
-
         const uriObj = Spicetify.URI.fromString(uris[0]);
         const openURL = uriObj.toOpenURL();
 
