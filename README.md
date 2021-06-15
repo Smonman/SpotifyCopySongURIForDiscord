@@ -1,4 +1,4 @@
-# SpotifyCopySongURIForDiscord
+# SpotifyCopySongURLForDiscord
 Copy a selected song URI and automatically add the neccessary details for the Discord bot "groovy".
 
 This implements a setting iside of Spotify to right-click and copy the songs URI to be posted in Discord servers.
