@@ -43,7 +43,7 @@
 
     function discordBotStringBuilder(url, shuffle) {
         // i made these variables for an easy change or easier adaptation to other bots
-        const botPrefix = "-";
+        const botPrefix = "/";
 
         const botPlayCommand = "play";
         const botShuffleCommand = "s";
