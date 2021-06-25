@@ -44,6 +44,8 @@
     function discordBotStringBuilder(url, shuffle) {
         // i made these variables for an easy change or easier adaptation to other bots
         const botPrefix = "/";
+        
+        const flagPrefix = "-";
 
         const botPlayCommand = "play";
         const botShuffleCommand = "s";
@@ -51,7 +53,7 @@
         if (!shuffle) {
             return botPrefix + botPlayCommand + " " + url;
         } else {
-            return botPrefix + botPlayCommand + " " + url + " " + botPrefix + botShuffleCommand; // the shuffle command is in reality a flag and can be used inline
+            return botPrefix + botPlayCommand + " " + url + " " + flagPrefix + botShuffleCommand; // the shuffle command is in reality a flag and can be used inline
         }
     }
 
