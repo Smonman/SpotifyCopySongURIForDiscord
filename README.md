@@ -1,4 +1,7 @@
 # SpotifyCopySongURLForDiscord
+
+## Unfortunately, the Discord bot "groovy" is no longer in service
+
 Copy a selected song URI and automatically add the neccessary details for the Discord bot "groovy".
 
 
